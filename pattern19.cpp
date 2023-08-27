@@ -8,7 +8,7 @@ int main()
 		int j=5;
 		while(j>=i)
 		{
-			cout<<j;
+			cout<<"*";
 			j--;
 		}
 		cout<<endl;

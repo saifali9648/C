@@ -11,6 +11,7 @@ int main()
 		int value=i;
 		while(j<=i)
 		{
+
 			cout<<value;
 			value++;
 			j++;
