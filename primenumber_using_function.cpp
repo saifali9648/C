@@ -2,6 +2,8 @@
 using namespace std;
 bool isprime(int n)
 {
+	if(n>1)
+	{
 	for(int i=2;i<n;i++)
 	{
 		if(n%2==0)
@@ -10,6 +12,10 @@ bool isprime(int n)
 		}
 		return 1;
 	}
+   }
+   else{
+   	cout<<"enter greater number  than 1"<<endl;
+   }
 }
 int main()
 {
