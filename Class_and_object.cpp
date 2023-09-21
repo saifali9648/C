@@ -1,14 +1,19 @@
 #include<iostream>
 using namespace std;
+//class declaration
  class Hero{
- 	public:
+ 	//properties
+ 	public: //access modifier
 	char name[100];
 	int health;
 	char level;
 };
 int main(){
+	//creation of object
 	Hero h1;
-	cout<<"size of hero class :"<<sizeof(h1.health)<<endl;
-	cout<<"size  of name :"<<sizeof(h1.name)<<endl;
+	h1.health=80;
+	h1.level='A';
+	cout<<"health is: "<<h1.health<<endl;
+	cout<<"leve of h1: "<<h1.level<<endl;
 	
 }
