@@ -1,26 +1,36 @@
 #include<iostream>
 using namespace std;
-void max(int arr[],int size){
-	int max;
-	for(int i=0;i<size;i++){
-		if(arr[i]>arr[i+1])
+int max(int arr[],int size){
+	int max=arr[0];
+	for(int i=1;i<size;i++){
+		if(arr[i]>max)
 		{
 			max=arr[i];
 		}
 	}
-	cout<<"maximum number is "<<max;
+	return max;
+}
+int min(int arr[],int size){
+	int min=arr[0];
+	for(int i=1;i<size;i++){
+		if(arr[i]<min){
+			min=arr[i];
+		}
+	}
+	return min;
 }
 int main(){
 	int arr[100];
 	int size;
-	cout<<"enter the size of array";
+	cout<<"enter the size of array"<<endl;
 	cin>>size;
 	cout<<"enter the array elements"<<endl;
 	for(int i=0;i<size;i++)
 	{
 		cin>>arr[i];
 	}
-	max(arr,size);
+	cout<<"maximum is:- "<<max(arr,size)<<endl;
+	cout<<"minimum is:- "<<min(arr,size);
 
 return 0;	
 }
